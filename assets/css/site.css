@@ -9,6 +9,21 @@ body {
     max-width: 100vw;
     max-height: 100vh;
     overflow: hidden;
+    color: rgb(201, 199, 197);
+    background-color: black;
+}
+
+.wip {
+    color: black;
+    background-color: yellow;
+    font-size: 2em;
+    font-weight: 700;
+    grid-area: none;
+    position: absolute;
+    transform: rotateZ(-45deg);
+    left: -71px;
+    top: 28px;
+    padding: 0 3em;
 }
 
 .background {
