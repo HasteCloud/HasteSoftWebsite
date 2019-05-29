@@ -113,6 +113,16 @@ body {
     opacity: 1;
 }
 
+.modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(201, 199, 197);
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+}
+
 .modal .body {
     grid-area: body;
     display: flex;
@@ -120,4 +130,5 @@ body {
     text-align: center;
     letter-spacing: .04em;
     margin: 0 1em;
+    justify-content: center;
 }
