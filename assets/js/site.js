@@ -8,9 +8,7 @@ for (const top of tops) {
         const modals = document.getElementsByClassName('modal');
         for (const modal of modals) {
             if (modal.id == target) {
-                if (modal.className.indexOf("show") == -1){
-                    modal.className += " show";
-                }
+                modal.className += " show";
             } else {
                 modal.className = modal.className.replace("show", '').trim();
             }
@@ -26,6 +24,6 @@ for (const close of closes) {
     close.addEventListener('click', (event) => {
         const target = close.getAttribute('link');
         const modal = document.getElementById(target);
-        modal.className = modal.className.replace("show", '').trim();
+        modal.className = modal.className.replace(/show/gi, '').trim();
     }); 
 }
