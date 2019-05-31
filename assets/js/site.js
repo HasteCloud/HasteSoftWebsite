@@ -7,10 +7,12 @@ for (const top of tops) {
         const target = top.getAttribute('link');
         const modals = document.getElementsByClassName('modal');
         for (const modal of modals) {
-            if (modal.id == target) {
-                modal.className += " show";
-            } else {
-                modal.className = modal.className.replace("show", '').trim();
+            if (modal.className.indexOf("show") == -1){
+                if (modal.id == target) {
+                    modal.className += " show";
+                } else {
+                    modal.className = modal.className.replace("show", '').trim();
+                }
             }
         }
     });
